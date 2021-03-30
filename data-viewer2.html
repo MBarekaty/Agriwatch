@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Simple Website</title>
+    <!-- styles -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans|Baumans' type='text/css'>
+  <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/viewer.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://gisedu.itc.utwente.nl/exercise/libraries/openlayers/v4.6.4/ol.css" 
+    type="text/css"/>
+	
+	<!-- scripts -->
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/openlayers/v4.6.4/ol.js"></script>  
+	<script src="scripts/viewer1.js"></script>
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/d3js/v4.13.0/d3.min.js"></script>
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/d3js/d3-tip_v4/d3-tip.js"></script>
+</head>
+ 
+<body onload = "init()">
+   <div class="container header">
+    <header>
+      <h1>A Simple Website</h1>
+      <p>Using HTML5 and CSS3</p>
+      <nav>
+        <ul>
+          <li><a href=".">Home</a></li>
+          <li class="active"><a href="javascript:void(0)">Data Viewer</a></li>
+          <li><a href="javascript:void(0)">Examples</a></li>
+          <li><a href="javascript:void(0)">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+ 
+  <section id="spacer">
+    <!-- Info Bar -->
+    <p>Visualizations created using OpenLayers, MapServer & D3</p>
+  </section> <!-- spacer -->
+  
+  <section id="spacer">
+    <form action="dimitri.marjan90@gmail.com" method="post">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+  </section> <!-- spacer -->
+    
+	
+
+  <!-- Map Section -->
+  
+  
+  <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style>
+  
+  <div class="embed-container"><small>
+  <a href "//agriwatch.maps.arcgis.com/apps/Embed/index.html?webmap=07d17c8fa6de460b8db760546c58a5aa&extent=5.0853,51.9788,9.4469,53.06&home=true&zoom=true&scale=true&legend=true&basemap_gallery=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br>
+  
+  <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="agriwatch_map" 
+  src="https://agriwatch.maps.arcgis.com/apps/webappviewer/index.html?id=631310308c044163b0fa71240384440d"></iframe></div>
+  
+	<footer>
+    <!-- Copyright notice -->
+    <section id="copyright">
+      <div class="wrapper">
+        <div class="social">
+          <a href="javascript:void(0)"><img src="images/icon-link-1.png" alt="tumblr" width="25"/></a>
+          <a href="javascript:void(0)"><img src="images/icon-link-2.png" alt="youtube" width="25"/></a>
+          <a href="javascript:void(0)"><img src="images/icon-link-3.png" alt="google plus" width="25"/></a>
+		</div>
+        &copy; Copyright 2019 by
+        <a href="https://www.itc.nl/geoinformatics">MGEO - Geoinformatics Program</a>.
+        All Rights Reserved.
+      </div>
+    </section> <!-- copyright -->
+    
+    <!-- Footer content -->
+    <section class="wrapper">
+      <article class="column">
+        <h4>About Us</h4>
+        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh 
+        elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper 
+        porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+      </article>
+      
+      <article class="column midlist">
+        <h4>Links</h4>
+        <ul>
+        <li><a href="javascript:void(0)">Curabitur sodales ligula in libero.</a></li>
+        <li><a href="javascript:void(0)">In scelerisque sem at dolor.</a></li>
+        <li><a href="javascript:void(0)">Suspendisse in justo eu magna luctus.</a></li>
+        <li><a href="javascript:void(0)">Vestibulum lacinia arcu eget nulla.</a></li></ul>
+      </article>
+      
+      <article class="column rightlist">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="https://www.itc.nl">
+            <img src="images/itc-link.png" width="80" alt="some alt text"/>
+            <span>ITC Faculty, University of Twente</span>
+          </a></li>
+          <li><a href="https://www.itc.nl/EOS">
+            <img src="images/eos-link.png" width="80" alt="some alt text"/>
+            <span>Earth Observation Science (EOS) Department</span>
+          </a></li>
+          <li><a href="https://gip.itc.nl">
+            <img src="images/gip-link.png" width="80" alt="some alt text"/>
+            <span>Geo-information Processing (GIP) Department</span>
+          </a></li>
+        </ul>
+      </article>
+    </section>
+  </footer>    
+</body>
+ 
+</html>
